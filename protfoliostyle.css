@@ -682,3 +682,28 @@ img {
     width: 450px;
   }
 }
+
+.skills {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+    gap: 20px; /* Adds space between elements */
+}
+
+.skill-name {
+    flex: 1;
+    min-width: 250px; /* Ensures the sections don’t shrink too much */
+    text-align: center;
+}
+
+/* Media query for mobile screens */
+@media screen and (max-width: 768px) {
+    .skills {
+        flex-direction: column; /* Stacks items vertically */
+        align-items: center;
+    }
+
+    .skill-name {
+        width: 100%; /* Makes each section take full width */
+    }
+}
